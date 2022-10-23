@@ -1,8 +1,9 @@
 
 # Get Latest Version
 api(dot)getfiddler(dot)com/linux/latest-linux
+EDIT: this fork was done with fiddler v3.4.1 in a windows 10 machine
 
-
+## Linux
 ## get ilasm (ildasm)
 
 1. dotnet new console -n test
@@ -11,6 +12,12 @@ api(dot)getfiddler(dot)com/linux/latest-linux
 4. dotnet publish -c Release --self-contained --runtime linux-x64
 5. export PATH=$(pwd)/bin/Release/netcoreapp3.1/linux-x64/publish:$PATH
 6. ilasm (ildasm)
+
+## Windows
+## You need to have installed .net and visual studio to get ildasm (decompiler) and ilasm (compiler)
+ildasm => from dll to il
+ilasm => from il to dll
+
 
 ## main.xxxx.js
 Open `fiddler/resources/app/out/WebServer/ClientApp/dist/main.xxx.js` and search for `updateUserLicense`
